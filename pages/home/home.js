@@ -1,9 +1,12 @@
 // pages/home/home.js
 
+<<<<<<< HEAD
 
 //获取应用实例
 const app = getApp();
 
+=======
+>>>>>>> f9f810d102b0f66131cdc1376ba8513431ba997c
 Page({
   data: {
     imgUrls:[
@@ -24,8 +27,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+<<<<<<< HEAD
     // 加载时先让用户授权登陆
 
+=======
+  
+>>>>>>> f9f810d102b0f66131cdc1376ba8513431ba997c
   },
 
   /**

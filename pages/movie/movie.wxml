@@ -1,0 +1,34 @@
+
+<view>
+ <swiper 
+  autoplay="true" 
+  circular="true"
+  interval="{{3000}}" 
+  duration="{{1000}}">
+  <block wx:for="{{imgs}}" wx:key="{{index}}" class="wrop">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view id="one">
+  精彩视频
+</view>
+  <view class="section tc">
+        <video 
+        id="myVideo" 
+        src="{{videoSrc}}" 
+        danmu-list="{{danmuList}}" 
+        enable-danmu 
+        danmu-btn 
+        bindplay="videoplay"
+        bindtimeupdate="videoplaying"
+        bindpause="videopause"
+        controls></video>
+        <view class="btn-area">
+          <button bindtap="bindButtonTap" type="warn">获取视频</button>
+          <input  value="{{inp}}" bindinput="bindInputBlur" class="inp"/>
+          <button bindtap="bindSendDanmu" type="primary">发送弹幕</button>
+        </view>
+      </view>
+</view>

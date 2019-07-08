@@ -1,4 +1,25 @@
 <!--pages/my/my.wxml-->
+<<<<<<< HEAD
 <view class="userinfo">
     
   </view>
+=======
+<view class="mine">
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  </view>
+  <view class="userinfo-box">
+   <image  class="userinfo-img" src="../../imgs/youhui.png" ></image>
+   <image  class="userinfo-img" src="../../imgs/pingtai.png" ></image>
+   <image  class="userinfo-img" src="../../imgs/qianbao.png" ></image>
+   <image  class="userinfo-img" src="../../imgs/shouhuo.png" ></image>
+  
+  </view>
+</view>
+>>>>>>> f9f810d102b0f66131cdc1376ba8513431ba997c
